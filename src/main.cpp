@@ -2,23 +2,27 @@
 #include <fstream>
 #include <sstream>
 #include <optional>
+#include <vector>
+
 using namespace std;
 
-enum class TokenIdentifier{
+enum class TokenIdentifier {
     _return,
     _int_lit,
     semi
 };
-struct Token{
-    TokenType iden;
+struct Token {
+    TokenIdentifier iden;
     optional<string> value;
 };
+vector<Token> tokenize(const string& str){
+    for (char c : str){
+        cout << c << endl;
+    }
+}
 
-
-
-
-int main(int argc, char* argv[]){
-    if(argc != 2){
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
         cerr << "Incorrect Usage" << endl;
         cerr << "Proper Usage is: 'hydro <input.hy>'" << endl;
         return EXIT_FAILURE;
@@ -31,6 +35,6 @@ int main(int argc, char* argv[]){
         contents = contents_stream.str();
     }
 
-    cout << contents << endl;
+    tokenize(contents);
     return EXIT_SUCCESS;
 }
