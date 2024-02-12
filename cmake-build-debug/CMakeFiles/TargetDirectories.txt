@@ -1,3 +1,0 @@
-/home/abhinav-mtw/projects/Sulfide/cmake-build-debug/CMakeFiles/sulf.dir
-/home/abhinav-mtw/projects/Sulfide/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/abhinav-mtw/projects/Sulfide/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/sulf.dir/src/main.cpp.o -o sulf 
